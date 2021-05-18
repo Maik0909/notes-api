@@ -11,20 +11,6 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 app.use(cors())
 
-// app.use(session({
-//   name: 'userId',
-//   secret: "shhh!",
-//   resave: true,
-//   cookie: {
-//     maxAge: 1000 * 60 * 60 * 2,
-//     sameSite: true,
-//     // secure: false
-//   }
-//   // store: new MemoryStore(),
-// }))
-
-
-
 let API = [
   {
     id: 1,
@@ -127,5 +113,6 @@ app.post('/api/notes', (req, res) => {
   res.status(201).json(newNote)
 })
 
-const PORT = 8080
+const PORT = process.env.PORT || 8080
+
 app.listen(PORT, () => console.log(`listening at http://localhost:${PORT}`))
