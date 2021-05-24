@@ -10,8 +10,6 @@ router.route('/api/notes')
 
         const { content, important = false } = req.body
 
-
-
         if (!content)
             return res.status(400).json({
                 error: 'Se debe incluir un contenido'
@@ -48,6 +46,7 @@ router.route('/api/notes')
             } catch (error) {
                 next(error)
             }
+
 
         }
 
