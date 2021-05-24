@@ -1,0 +1,7 @@
+PATCH  http://localhost:8080/api/notes/60a53b74ba854d01183259d0
+Content-Type: application/json
+
+{
+    "content": "Aprender a subir archivos con ndoe",
+    "important": true
+}

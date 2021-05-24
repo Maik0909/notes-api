@@ -1,6 +1,8 @@
 POST http://localhost:8080/api/notes
+Authorization: Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGFhYmMzZDM2NWJmNDM0MzBlMTgxODMiLCJpYXQiOjE2MjE4MDY5MDEsImV4cCI6MTYyNDM5ODkwMX0.dVeJEIQpJ1Jf9bK-ukn8fwm74xlmMDqxAvXv4Qn24w7NtNgGV35_agStQTc4_Da7_7hWXq6D2PkofUtYuLdLlw
 Content-Type: application/json
 
 {
-    "content": "Ordenar mi habitación"
+    "content": "Hacer user research",
+    "userId": "60aabc3d365bf43430e18183"
 }
